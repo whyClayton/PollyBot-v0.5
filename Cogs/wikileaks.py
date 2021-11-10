@@ -13,7 +13,7 @@ class WikiLeaks(commands.Cog, name="reddit law news"):
     @commands.command(name = "WikiLeaks",
                     usage="",
                     description = "Shows the top ten posts on /r/WikiLeaks.")
-    #Function that will post the top 10 posts from /r/politics
+    #Function that will post the top 10 posts from /r/WikiLeaks
     @commands.cooldown(1, 2, commands.BucketType.member)
     async def WikiLeaks(self, ctx):
         for post in hot_posts:

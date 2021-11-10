@@ -13,7 +13,7 @@ class ptxPDFs(commands.Cog, name="reddit law news"):
     @commands.command(name = "ptxPDFs",
                     usage="",
                     description = "Shows the top ten posts on /r/PoliticsPDFs.")
-    #Function that will post the top 10 posts from /r/politics
+    #Function that will post the top 10 posts from /r/PoliticsPDFs
     @commands.cooldown(1, 2, commands.BucketType.member)
     async def ptxPDFs(self, ctx):
         for post in hot_posts:

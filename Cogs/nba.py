@@ -13,7 +13,7 @@ class nbanews(commands.Cog, name="reddit nba news"):
     @commands.command(name = "nbanews",
                     usage="",
                     description = "Shows the top ten posts on /r/nba")
-    #Function that will post the top 10 posts from /r/energy
+    #Function that will post the top 10 posts from /r/nba
     @commands.cooldown(1, 2, commands.BucketType.member)
     async def energynews(self, ctx):
         for post in hot_posts:

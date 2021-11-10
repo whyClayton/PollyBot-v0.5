@@ -13,7 +13,7 @@ class wownews(commands.Cog, name="reddit wow news"):
     @commands.command(name = "wownews",
                     usage="",
                     description = "Shows the top ten posts on /r/wow")
-    #Function that will post the top 10 posts from /r/energy
+    #Function that will post the top 10 posts from /r/wow
     @commands.cooldown(1, 2, commands.BucketType.member)
     async def energynews(self, ctx):
         for post in hot_posts:

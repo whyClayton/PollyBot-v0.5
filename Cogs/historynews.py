@@ -13,7 +13,7 @@ class historynews(commands.Cog, name="reddit law news"):
     @commands.command(name = "historynews",
                     usage="",
                     description = "Shows the top ten posts on /r/history.")
-    #Function that will post the top 10 posts from /r/politics
+    #Function that will post the top 10 posts from /r/history
     @commands.cooldown(1, 2, commands.BucketType.member)
     async def historynews(self, ctx):
         for post in hot_posts:
