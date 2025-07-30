@@ -15,7 +15,7 @@ class halonews(commands.Cog, name="reddit halo news"):
                     description = "Shows the top ten posts on /r/halo")
     #Function that will post the top 10 posts from /r/halo
     @commands.cooldown(1, 2, commands.BucketType.member)
-    async def energynews(self, ctx):
+    async def halonews(self, ctx):
         for post in hot_posts:
             message = await ctx.send(post.title)
             await message.edit(content=f" • " + post.title)
