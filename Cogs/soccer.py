@@ -15,7 +15,7 @@ class soccernews(commands.Cog, name="reddit soccer news"):
                     description = "Shows the top ten posts on /r/soccer")
     #Function that will post the top 10 posts from /r/soccer
     @commands.cooldown(1, 2, commands.BucketType.member)
-    async def energynews(self, ctx):
+    async def soccernews(self, ctx):
         for post in hot_posts:
             message = await ctx.send(post.title)
             await message.edit(content=f" • " + post.title)
